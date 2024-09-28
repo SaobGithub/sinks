@@ -1,35 +1,101 @@
-/* Outdated CSS */
+/* Updated CSS for sinks activity */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-h1 {
-    margin: 0;
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-ul {
-    margin: 0;
-    padding: 0;
+header {
+  background-color: #cccccc;
+  text-align: center;
+  padding: 20px;
 }
 
-li {
-    margin: 0;
-    padding: 0;
+header h1 {
+  margin: 0;
 }
 
-p {
-    margin: 0;
-    padding: 0;
+
+nav {
+  background-color: #333333;
 }
 
-img {
-    width: 100%;
-    height: auto;
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+}
+
+nav ul li a:hover {
+  background-color: #444444;
+  border-radius: 5px;
+}
+
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.main-content {
+  flex: 3 1 100%;
+  padding: 15px;
+}
+
+.main-content img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.grid-item {
+  flex: 1 1 300px;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  box-sizing: border-box;
+}
+
+
+footer {
+  background-color: #cccccc;
+  text-align: center;
+  padding: 10px;
+}
+
+
+@media (max-width: 768px) {
+  nav ul {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .main-content {
+      flex: 1 1 100%;
+  }
 }
